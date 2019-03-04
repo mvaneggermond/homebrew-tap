@@ -1,15 +1,15 @@
 class Pgrouting < Formula
   desc "Provides geospatial routing for PostGIS/PostgreSQL database"
-  homepage "https://pgrouting.org/"
+  homepage "http://www.pgrouting.org"
   url "https://github.com/pgRouting/pgrouting/archive/v2.4.1.tar.gz"
   sha256 "11d225391cdac8e15136a51664b22fa007d10cb78bf8208374470a9044850fd4"
   head "https://github.com/pgRouting/pgrouting.git"
 
   bottle do
     cellar :any
-    sha256 "ff55fe464965d0a636b90029ea51c6a8e11d9cb7ddcd2c331180714efea17e9e" => :mojave
-    sha256 "c0a852dd7eb64c1a2faa1445a886a7ceb8d84eed3fb9a7011268f12b1d3f9a74" => :high_sierra
-    sha256 "6df533874805d06622bea6b918112c8a2ad4f717a7a6ead2676e98dcd6a6a2f1" => :sierra
+    sha256 "cb67355aa7d3ed417632b3cd8c6dd6d435b245f9f5c2fafc21431b0bf59269a4" => :sierra
+    sha256 "e6fb19d18de31dd6bda92ea7bcf756942531caec218eed98cf2f3769a5979a83" => :el_capitan
+    sha256 "c045bf01a7214435ab33ba178f0782449d1b8637fef820c590c8439c4d43fe9d" => :yosemite
   end
 
   depends_on "cmake" => :build
