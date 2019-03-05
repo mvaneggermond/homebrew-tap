@@ -2,15 +2,15 @@ class Pgrouting < Formula
   desc "Provides geospatial routing for PostGIS/PostgreSQL database"
   homepage "http://www.pgrouting.org"
   url "https://homebrew.bintray.com/bottles/pgrouting-2.5.2.high_sierra.bottle.tar.gz"
-  sha256 "9251d5955e00456ce8fd7f4fade0f40158687fd58814cbb961ba3588edc31153"
+  sha256 "5a642c2d88ebaa7e0a0f9ae9369a716dd6dc2ab97c7fa4969c477be85b9490c8"
   revision 1
   head "https://github.com/pgRouting/pgrouting.git"
 
   bottle do
-    cellar :any
     sha256 "5a642c2d88ebaa7e0a0f9ae9369a716dd6dc2ab97c7fa4969c477be85b9490c8" => :high_sierra
     sha256 "41d721ab350e6c2e3ba26c7178581c6a2935e089af7b366a738311ded552a998" => :sierra
     sha256 "f98c878047ae5b781926f2d771cf11c6937df2a4938a24f58042d5c652167f38" => :el_capitan
+    cellar :any
   end
 
   depends_on "cmake" => :build
